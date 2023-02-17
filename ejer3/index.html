@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Introduccion de productos en la factura</h1>
+        <form action="">
+            <label for="producto">Producto:</label>
+            <input type="text" name="producto" id="producto">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" name="cantidad" id="cantidad">
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio">
+            <button id="buton" type="button">Añadir</button>
+        </form>
+        <form action="">
+            <label for="nombre">Nombre y Apellidos</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="">DNI</label>
+            <input type="text" id="dni">
+            <label for="">Pago</label>
+            <input type="text" id="pago" placeholder="efectivo o trajeta">
+            <button id="pagar" type="button">Agregar Datos</button>
+        </form>
+        <form action="" id="estilos">
+            <div class="tabla">
+                <h2>Encabezado</h2>
+                <label for="">Color Fondo</label>
+                <select name="" id="colorF">
+                    <option value="blue">Azul</option>
+                    <option value="red">Rojo</option>
+                    <option value="green">Verde</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
+                <label for="">Tamaño</label>
+                <select name="" id="tamañoE">
+                    <option value="small">Pequeña</option>
+                    <option value="large">Grande</option>
+                    <option value="medium">Normal</option>
+                </select>
+            </div>
+            <div class="tabla">
+                <h2>Tabla</h2>
+                <label for="">Titulos</label>
+                <select name="" id="tamañoT">
+                    <option value="small">Pequeña</option>
+                    <option value="large">Grande</option>
+                    <option value="medium">Normal</option>
+                </select>
+                <label for="">Fondo</label>
+                <select name="" id="fondoT">
+                    <option value="blue">Azul</option>
+                    <option value="red">Rojo</option>
+                    <option value="green">Verde</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
+                <label for="">Bordes</label>
+                <select name="" id="borde">
+                    <option value="no">NO</option>
+                    <option value="si">Si</option>
+                </select>
+                <label for="">Color borde</label>
+                <select name="" id="colorB">
+                    <option value="blue">Azul</option>
+                    <option value="red">Rojo</option>
+                    <option value="green">Verde</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
+                <label for="">Tamño borde</label>
+                <select name="" id="bordeT">
+                    <option value="1px">1</option>
+                    <option value="2px">2</option>
+                    <option value="3px">3</option>
+                </select>
+                <label for="">Tipo borde</label>
+                <select name="" id="tipoB">
+                    <option value="dotted">Punteado</option>
+                    <option value="solid">Solido</option>
+                    <option value="double">Doble</option>
+                </select>
+            </div>
+            <button id="btabla" type="button">Aplicar estilo</button>
+        </form>
+        <h1 id="f">Factura</h1>
+        <div id="datos"></div>
+        <table id="tabla">
+            <thead id="headTabla">
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Precio Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tr >
+                <th>Base Imponible</th>
+                <th id="base" colspan="4"></th>
+            </tr>
+            <tr>
+                <th>IVA 21%</th>
+                <th id="iva" colspan="4"></th>
+            </tr>
+            <tr >
+                <th>Total Factura</th>
+                <th id="total" colspan="4"></th>
+            </tr>
+        </table>
+
+        <script src="app.js"></script>
+    </body>
+</html>

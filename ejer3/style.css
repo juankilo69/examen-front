@@ -1,0 +1,97 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: rgb(63, 138, 91);
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin:0px auto;
+}
+
+#estilos{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.tabla{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+label{
+    font-size: 20px;
+    color: mediumseagreen;
+}
+
+input{
+    margin:10px 0px 20px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: mediumseagreen;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+table{
+    width: 750px;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(15, 14, 14, 0.477);
+}
+
+thead{
+    margin-bottom: 30px;
+}
+
+td{
+    text-align: center;
+    background: rgb(255, 255, 255,0.75);
+    font-weight: bold;
+}
+
+.detalles:hover{
+    background: rgb(0, 157, 255);
+}
+
+.eliminar{
+    border: none;
+}
+
+.eliminar:hover{
+    background: rgb(255, 0, 0);
+}
+
+#base ,#iva, #total{
+    margin-left: 300px;
+    text-align: right;
+}
+
+#datos{
+    width: 280px;
+    margin: 0 9.5%;
+    background: rgba(73, 71, 71, 0.477);
+
+}
+
+span{
+    margin-right:30px ;
+}
+
